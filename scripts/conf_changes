@@ -4,8 +4,6 @@ WSGIScriptAlias / /var/www/html/flaskapp/flaskapp.wsgi
 <Directory flaskapp>
     WSGIProcessGroup flaskapp
     WSGIApplicationGroup %{GLOBAL}
-    Options +Indexes FollowSymLinks +ExecCGI
-    AllowOverride AuthConfig FileInfo
     Order allow,deny
     Allow from all
 </Directory>
