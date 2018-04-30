@@ -4,6 +4,6 @@ WSGIScriptAlias / /var/www/html/flaskapp/flaskapp.wsgi
 <Directory flaskapp>
     WSGIProcessGroup flaskapp
     WSGIApplicationGroup %{GLOBAL}
-    Order allow,deny
+    Order deny,allow
     Allow from all
 </Directory>
